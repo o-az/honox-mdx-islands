@@ -34,7 +34,6 @@
     "@mdx-js/rollup": "^3.1.0",
     "@types/bun": "^1.2.2",
     "@types/node": "^22.13.1",
-    "bun": "^1.2.2",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.0.0",
     "typescript": "^5.7.3",
