@@ -4,11 +4,11 @@ import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import client from 'honox/vite/client'
 import tailwindcss from '@tailwindcss/vite'
-import pages from '@hono/vite-cloudflare-pages'
 import remarkSmartypants from 'remark-smartypants'
 import remarkFrontmatter from 'remark-frontmatter'
 import { defineConfig, type PluginOption } from 'vite'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
+import honoVitePages from '@hono/vite-build/cloudflare-pages'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeShiki, { type RehypeShikiOptions } from '@shikijs/rehype'
 
@@ -51,6 +51,6 @@ export default defineConfig((config) => {
   }
 
   return {
-    plugins: [honox(), pages(), ...plugins],
+    plugins: [honox(), honoVitePages(), ...plugins],
   }
 })

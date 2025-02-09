@@ -1,28 +1,11 @@
 #: schema https://esm.sh/wrangler/config-schema.json
 # https://developers.cloudflare.com/workers/wrangler/configuration
 
-# start of globally inheritable configuration
-#
-name = "hono-mdx-islands"
-# minify = true
-# keep_vars = true
+name = "honox-mdx-islands"
 compatibility_date = "2025-02-09"
+pages_build_output_dir = "./dist"
 compatibility_flags = [ "nodejs_compat" ]
 
-pages_build_output_dir = "dist"
-
-#
-# end of globally inheritable configuration
-
-# workers_dev = true
-vars = { ENVIRONMENT = "development" }
-
-
-[env.production]
-name = "hono-mdx-islands"
-# workers_dev = true
-vars = { ENVIRONMENT = "production" }
-
 # https://developers.cloudflare.com/workers/observability/logs/workers-logs/
-[env.production.observability]
+[observability]
 enabled = true
