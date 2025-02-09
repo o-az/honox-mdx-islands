@@ -12,8 +12,6 @@ import honoVitePages from '@hono/vite-build/cloudflare-pages'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeShiki, { type RehypeShikiOptions } from '@shikijs/rehype'
 
-const entry = './app/server.ts'
-
 const plugins = [
   tailwindcss(),
   mdx({
@@ -24,10 +22,7 @@ const plugins = [
       [
         rehypeShiki,
         <RehypeShikiOptions>{
-          themes: {
-            dark: 'github-dark',
-            light: 'github-light',
-          },
+          themes: { dark: 'github-dark', light: 'github-light' },
         },
       ],
     ],

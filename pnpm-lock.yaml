@@ -20,6 +20,9 @@ importers:
       honox:
         specifier: ^0.1.34
         version: 0.1.34(hono@4.7.0)(miniflare@3.20250129.0)(wrangler@3.107.3(@cloudflare/workers-types@4.20250204.0))
+      powerglitch:
+        specifier: ^2.4.0
+        version: 2.4.0
       rehype-autolink-headings:
         specifier: ^7.1.0
         version: 7.1.0
@@ -1649,6 +1652,9 @@ packages:
   postcss@8.5.1:
     resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
     engines: {node: ^10 || ^12 || >=14}
+
+  powerglitch@2.4.0:
+    resolution: {integrity: sha512-O/WgCJ2GthDfKanl6YDUn7FHWa9GOj8R7UPTX6cwGbl0R+FTiQtba0zuVOIviydr6cOIgNqvz+8hAhvyn7FtBw==}
 
   precinct@12.1.2:
     resolution: {integrity: sha512-x2qVN3oSOp3D05ihCd8XdkIPuEQsyte7PSxzLqiRgktu79S5Dr1I75/S+zAup8/0cwjoiJTQztE9h0/sWp9bJQ==}
@@ -3765,6 +3771,8 @@ snapshots:
       nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  powerglitch@2.4.0: {}
 
   precinct@12.1.2:
     dependencies:

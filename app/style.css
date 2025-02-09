@@ -4,6 +4,15 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+h1 > a {
+  @apply text-blue-500;
+}
+
+a {
+  text-decoration: underline;
+  color: hsl(216.88deg 100% 59.61%);
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -32,7 +41,6 @@ pre.shiki.shiki,
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
 }
-
 
 article {
   h1:first-of-type {

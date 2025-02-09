@@ -1,4 +1,4 @@
-export interface Frontmatter {
+export interface Meta {
   date: string
   title: string
   excerpt: string
