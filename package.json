@@ -1,20 +1,21 @@
 {
-  "name": "website",
+  "name": "hono-mdx-islands",
   "private": true,
   "type": "module",
   "imports": {
-    "#*": "./app/*",
-    "#writings": "./writings/*"
+    "#*": "./app/*"
   },
   "scripts": {
-    "dev": "vite --port 4200",
-    "build": "vite build",
+    "dev": "vite --port 4200 --open",
+    "build": "vite build --mode='client' && vite build",
     "preview": "wrangler pages dev dist",
     "predeploy": "pnpm build",
-    "deploy": "wrangler pages deploy dist",
-    "check": "biome check . --fix --unsafe"
+    "deploy": "wrangler pages deploy",
+    "check": "biome check . --fix --unsafe",
+    "typecheck": "tsc --noEmit --project tsconfig.json"
   },
   "dependencies": {
+    "@hono/vite-cloudflare-pages": "^0.4.2",
     "@iconify/tailwind4": "^1.0.3",
     "@shikijs/rehype": "^2.3.2",
     "@tailwindcss/vite": "^4.0.5",
@@ -30,9 +31,10 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@hono/vite-ssg": "^0.1.1",
+    "@cloudflare/workers-types": "^4.20250204.0",
     "@mdx-js/rollup": "^3.1.0",
     "@types/bun": "^1.2.2",
+    "@types/mdx": "^2.0.13",
     "@types/node": "^22.13.1",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.0.0",
