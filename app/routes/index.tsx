@@ -2,7 +2,7 @@ import Counter from '#islands/counter.tsx'
 import { createRoute } from 'honox/factory'
 import ContextExample from '#components/context-example.tsx'
 
-export default createRoute((context) => {
+export default createRoute((context, _next) => {
   return context.render(
     <main class="uppercase space-y-8">
       <article>
@@ -11,7 +11,6 @@ export default createRoute((context) => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://jasonformat.com/islands-architecture/"
-            class=""
           >
             ISLAND
           </a>{' '}

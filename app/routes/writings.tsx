@@ -1,7 +1,7 @@
-import { createRoute } from 'honox/factory'
 import type { Meta } from '#types.ts'
+import { createRoute } from 'honox/factory'
 
-export default createRoute((context) => {
+export default createRoute((context, _next) => {
   const writings = import.meta.glob<{ frontmatter: Meta }>(
     ['./experiments/*.md', './experiments/*.mdx'],
     { eager: true },

@@ -1,13 +1,9 @@
 import { Style } from 'hono/css'
-import type { Context } from 'hono'
+import { Link, Script } from 'honox/server'
 import { jsxRenderer } from 'hono/jsx-renderer'
-import { HasIslands, Link, Script } from 'honox/server'
-
-const IS_PRODUCTION = import.meta.env.PROD
 
 export default jsxRenderer(
   ({ children, title, frontmatter, Layout: _ }, _context) => {
-    // console.info(JSON.stringify({title,frontmatter}, undefined, 2))
     return (
       <html lang="en" class="font-mono size-full min-h-full min-w-full">
         <head>
@@ -40,7 +36,7 @@ export default jsxRenderer(
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/o-az/honox-mdx-island"
+                    href="https://github.com/o-az/honox-mdx-islands"
                   >
                     source code
                   </a>
@@ -51,7 +47,7 @@ export default jsxRenderer(
           <main class="size-full max-w-2xl m-4 p-4">
             <article>{children}</article>
           </main>
-          <footer className="">
+          <footer>
             <a
               target="_blank"
               rel="noopener noreferrer"
