@@ -1,11 +1,10 @@
 export default async function AsyncComponent() {
   const responses = await Promise.all(
-    [1, 2, 3].map(async (id) => {
-      const response = await fetch(
-        `https://jsonplaceholder.typicode.com/todos/${id}`,
-      )
-      return response.json()
-    }),
+    [1, 2, 3].map((id) =>
+      fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        .then((response) => response.json())
+        .catch(),
+    ),
   )
   const todos = responses.map((todo) => todo as { id: number; title: string })
 

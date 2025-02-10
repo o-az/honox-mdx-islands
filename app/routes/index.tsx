@@ -8,7 +8,7 @@ export default createRoute((context, _next) => {
   return context.render(
     <main class="uppercase space-y-8">
       <article>
-        <p class="text-2xl font-semibold">
+        <p class="text-xl font-semibold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -21,7 +21,7 @@ export default createRoute((context, _next) => {
         <Counter />
       </article>
       <article>
-        <p class="text-2xl font-semibold">
+        <p class="text-xl font-semibold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default createRoute((context, _next) => {
       </article>
       <article>
         <Suspense fallback={<div>Loading...</div>}>
-          <p class="text-2xl font-semibold">
+          <p class="text-xl font-semibold">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -86,7 +86,7 @@ export default createRoute((context, _next) => {
         </Suspense>
       </article>
       <article>
-        <p class="text-2xl font-semibold">CHECKOUT THE DUMMY 'BLOG POSTS'</p>
+        <p class="text-xl font-semibold">CHECKOUT THE DUMMY 'BLOG POSTS'</p>
         <p>
           TO SEE MDX WITH FRONTMATTER AND REHYPE REMARK PLUGINS WORKING IN
           HONO/X. [<a href="/writings">WRITINGS</a>]
