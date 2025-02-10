@@ -10,7 +10,9 @@ export default async function AsyncComponent() {
 
   return (
     <div class="mt-2">
-      <p>Three Todos fetched from jsonplaceholder.typicode.com</p>
+      <p class="sm:text-sm text-xs">
+        Three Todos fetched from jsonplaceholder.typicode.com
+      </p>
       <ul class="text-xs ml-12 mt-3">
         {todos.map((todo) => (
           <li key={todo.id}>

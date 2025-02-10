@@ -8,7 +8,7 @@ export default createRoute((context, _next) => {
   return context.render(
     <main class="uppercase space-y-8">
       <article>
-        <p class="text-xl font-semibold">
+        <p class="sm:text-xl text-sm font-semibold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -21,7 +21,7 @@ export default createRoute((context, _next) => {
         <Counter />
       </article>
       <article>
-        <p class="text-xl font-semibold">
+        <p class="sm:text-xl text-sm font-semibold">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -30,15 +30,15 @@ export default createRoute((context, _next) => {
           >
             CONTEXT
           </a>{' '}
-          USAGE IN AN ISLAND EXAMPLE
+          USAGE IN AN ISLAND
         </p>
         <ContextExample />
-        <p>
+        <p class="sm:text-sm text-xs">
           TRY APPENDING{' '}
           <span class="lowercase bg-slate-400 text-black">`start`</span> QUERY
           PARAMETER TO THE URL
         </p>
-        <p>
+        <p class="sm:text-sm text-xs">
           FOR EXAMPLE{' '}
           <span class="lowercase bg-slate-400 text-black">`?start=5`</span>.{' '}
         </p>
@@ -51,28 +51,30 @@ export default createRoute((context, _next) => {
           https://honox-mdx-islands.pages.dev?start=5
         </a>
         <br />
-        THIS IS AN ISLAND THAT HAS ACCESS TO THE CONTEXT OBJECT! [
-        <a href="https://github.com/o-az/honox-mdx-islands/blob/main/app/components/context-example.tsx">
-          CODE
-        </a>
-        ]
+        <p class="sm:text-sm text-xs">
+          AN ISLAND THAT HAS ACCESS TO THE CONTEXT OBJECT! [
+          <a href="https://github.com/o-az/honox-mdx-islands/blob/main/app/components/context-example.tsx">
+            CODE
+          </a>
+          ]
+        </p>
       </article>
       <article>
         <Suspense fallback={<div>Loading...</div>}>
-          <p class="text-xl font-semibold">
+          <p class="sm:text-xl text-sm font-semibold">
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://hono.dev/docs/guides/jsx#async-component"
             >
               ASYNC COMPONENT
-            </a>{' '}
-            EXAMPLE
+            </a>
           </p>
-          <p>
-            THIS COMPONENT HAS A DATA FETCHER THAT'S AWAITED DIRECTLY AND
-            ASYNCHRONOUSLY INSIDE THE COMPONENT ITSELF. IT'S ALSO WRAPPED IN
-            SUSPENSE [
+          <p class="sm:text-sm text-xs">
+            HAS A DATA FETCHER THAT'S AWAITED DIRECTLY AND ASYNCHRONOUSLY
+          </p>
+          <p class="sm:text-sm text-xs">
+            IT'S ALSO WRAPPED IN SUSPENSE [
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -86,8 +88,10 @@ export default createRoute((context, _next) => {
         </Suspense>
       </article>
       <article>
-        <p class="text-xl font-semibold">CHECKOUT THE DUMMY 'BLOG POSTS'</p>
-        <p>
+        <p class="sm:text-xl text-sm font-semibold">
+          CHECKOUT THE DUMMY 'BLOG POSTS'
+        </p>
+        <p class="sm:text-sm text-xs">
           TO SEE MDX WITH FRONTMATTER AND REHYPE REMARK PLUGINS WORKING IN
           HONO/X. [<a href="/writings">WRITINGS</a>]
         </p>

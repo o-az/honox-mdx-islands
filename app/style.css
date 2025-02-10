@@ -18,6 +18,10 @@ a {
   color: #5f9dff;
 }
 
+button {
+  touch-action: manipulation;
+}
+
 button:hover {
   cursor: pointer;
 }

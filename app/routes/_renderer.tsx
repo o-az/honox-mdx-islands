@@ -22,7 +22,7 @@ export default jsxRenderer(
           <Style />
         </head>
         <body class="m-0 dark:text-stone-50 flex flex-col justify-between items-center">
-          <header class="w-full pl-3 pt-2">
+          <header class="w-full pl-3 pt-2 mb-2">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export default jsxRenderer(
               </ul>
             </nav>
           </header>
-          <main class="max-w-2xl m-4 p-4">
+          <main class="max-w-2xl sm:m-4 sm:p-4 m-2 p-2">
             <article>{children}</article>
           </main>
         </body>
