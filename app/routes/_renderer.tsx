@@ -23,7 +23,15 @@ export default jsxRenderer(
         </head>
         <body class="m-0 dark:text-stone-50 flex flex-col justify-between items-center">
           <header class="w-full pl-3 pt-2">
-            <h1 class="text-2xl font-extrabold">Lorem Ipsum</h1>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/o-az/honox-mdx-islands"
+              class="bg-emerald-300 font-extrabold p-1 dark:text-black! text-white! no-underline! hover:bg-black hover:text-white!"
+            >
+              github.com/o-az/honox-mdx-islands
+            </a>
+            <h1 class="text-3xl font-extrabold">Lorem Ipsum</h1>
             <nav class="uppercase">
               <ul>
                 <li>
@@ -47,16 +55,6 @@ export default jsxRenderer(
           <main class="max-w-2xl m-4 p-4">
             <article>{children}</article>
           </main>
-          <section class="absolute top-0 right-0 text-sm">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/o-az/honox-mdx-islands"
-              class="bg-emerald-300 font-extrabold p-2 dark:text-black! text-white! no-underline! hover:bg-black hover:text-white!"
-            >
-              github.com/o-az/honox-mdx-islands
-            </a>
-          </section>
         </body>
       </html>
     )
