@@ -44,9 +44,9 @@ export default createRoute((context, _next) => {
           target="_blank"
           class="lowercase"
           rel="noopener noreferrer"
-          href="https://hono-mdx-islands.pages.dev?start=5"
+          href="https://honox-mdx-islands.pages.dev?start=5"
         >
-          https://hono-mdx-islands.pages.dev?start=5
+          https://honox-mdx-islands.pages.dev?start=5
         </a>
         <br />
         THIS IS AN ISLAND THAT HAS ACCESS TO THE CONTEXT OBJECT!
