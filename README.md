@@ -9,3 +9,13 @@ Showcasing how all the following work in harmony together:
   - frontmatter
   - rehype plugins
   - remark plugins
+
+# Get started
+
+```sh
+bun install
+```
+
+```
+
+```

@@ -4,13 +4,18 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+*::selection {
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(290, 100%, 90%);
+}
+
 h1 > a {
   @apply text-blue-500;
 }
 
 a {
   text-decoration: underline;
-  color: hsl(216.88deg 100% 59.61%);
+  color: #5F9DFF;
 }
 
 button:hover {
@@ -40,36 +45,6 @@ pre.shiki.shiki,
   font-style: var(--shiki-dark-font-style) !important;
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
-}
-
-article {
-  h1:first-of-type {
-    @apply mb-6;
-  }
-
-  a:hover {
-    @apply decoration-solid underline underline-offset-2;
-  }
-
-  hr {
-    @apply border-0 h-0.5 rounded-full my-8;
-  }
-
-  blockquote {
-    @apply border-l-4 pl-4 my-6;
-  }
-  blockquote p {
-    @apply font-mono whitespace-pre-wrap mt-0;
-  }
-  blockquote p:last-child {
-    @apply mb-0;
-  }
-  ul li {
-    @apply list-disc ml-5;
-  }
-  ol li {
-    @apply list-decimal ml-9;
-  }
 }
 
 input::-webkit-outer-spin-button,

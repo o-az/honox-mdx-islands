@@ -9,7 +9,8 @@
     "dev": "vite --port 4200 --open",
     "build": "vite build --mode='client' && vite build",
     "preview": "wrangler pages dev dist",
-    "deploy": "$npm_execpath run build && wrangler pages deploy ./dist",
+    "predeploy": "$npm_execpath run build",
+    "deploy": "wrangler pages deploy dist",
     "check": "biome check . --fix --unsafe",
     "typecheck": "tsc --noEmit --project tsconfig.json"
   },
@@ -21,7 +22,6 @@
     "powerglitch": "^2.4.0",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
-    "remark-frontmatter": "^5.0.0",
     "remark-gfm": "^4.0.0",
     "remark-smartypants": "^3.0.2",
     "shiki": "^2.3.2"

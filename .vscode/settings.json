@@ -28,6 +28,7 @@
     "plaintext": "html"
   },
   "files.associations": {
+    "bun.lock": "jsonc",
     "*.css": "tailwindcss",
     ".env.example": "dotenv"
   },
