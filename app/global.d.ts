@@ -1,4 +1,3 @@
-import {} from 'hono'
 import type { Meta } from '#types.ts'
 
 interface Env {
