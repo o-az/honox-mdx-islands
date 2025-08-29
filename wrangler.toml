@@ -1,14 +1,17 @@
 #: schema https://esm.sh/wrangler/config-schema.json
 # https://developers.cloudflare.com/workers/wrangler/configuration
 
+keep_vars = true
+workers_dev = true
 name = "honox-mdx-islands"
-compatibility_date = "2025-02-09"
+compatibility_date = "2025-08-29"
 pages_build_output_dir = "./dist"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = ["nodejs_compat"]
+preview_urls = true
 
 # https://developers.cloudflare.com/workers/observability/logs/workers-logs/
 [observability]
 enabled = true
 
 [vars]
-BUN_VERSION = "1.2.2"
+BUN_VERSION = "1.2.17"

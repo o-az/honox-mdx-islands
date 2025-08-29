@@ -30,3 +30,7 @@ _
 
 .wrangler
 .content-collections
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+_

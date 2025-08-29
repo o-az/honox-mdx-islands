@@ -3,8 +3,8 @@ export default async function AsyncComponent() {
     [1, 2, 3].map((id) =>
       fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
         .then((response) => response.json())
-        .catch(),
-    ),
+        .catch()
+    )
   )
   const todos = responses.map((todo) => todo as { id: number; title: string })
 

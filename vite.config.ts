@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import client from 'honox/vite/client'
 import tailwindcss from '@tailwindcss/vite'
+import { cloudflare } from '@cloudflare/vite-plugin'
 import remarkSmartypants from 'remark-smartypants'
 import remarkFrontmatter from 'remark-frontmatter'
 import { defineConfig, type PluginOption } from 'vite'
@@ -22,17 +23,17 @@ const plugins = [
       [
         rehypeShiki,
         <RehypeShikiOptions>{
-          themes: { dark: 'github-dark', light: 'github-light' },
-        },
-      ],
+          themes: { dark: 'github-dark', light: 'github-light' }
+        }
+      ]
     ],
     remarkPlugins: [
       remarkGfm,
       remarkFrontmatter,
       remarkSmartypants,
-      remarkMdxFrontmatter,
-    ],
-  }),
+      remarkMdxFrontmatter
+    ]
+  })
 ] satisfies Array<PluginOption>
 
 export default defineConfig((config) => {
@@ -40,12 +41,12 @@ export default defineConfig((config) => {
     return {
       plugins: [client(), ...plugins],
       build: {
-        rollupOptions: { input: ['./app/style.css'] },
-      },
+        rollupOptions: { input: ['./app/style.css'] }
+      }
     }
   }
 
   return {
-    plugins: [honox(), honoVitePages(), ...plugins],
+    plugins: [cloudflare(), honox(), honoVitePages(), ...plugins]
   }
 })

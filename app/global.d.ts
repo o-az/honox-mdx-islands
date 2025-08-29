@@ -1,3 +1,4 @@
+// biome-ignore lint/correctness/noUnusedImports: on purpose - HonoX requires this import
 import {} from 'hono'
 import type { Meta } from '#types.ts'
 
@@ -9,7 +10,7 @@ declare module 'hono' {
   interface ContextRenderer {
     (
       content: string | Promise<string>,
-      meta?: Meta & { frontmatter: Meta },
+      meta?: Meta & { frontmatter: Meta }
     ): Response | Promise<Response>
   }
 }

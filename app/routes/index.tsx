@@ -97,6 +97,6 @@ export default createRoute((context, _next) => {
         </p>
         <p></p>
       </article>
-    </main>,
+    </main>
   )
 })

@@ -4,10 +4,10 @@ import { createRoute } from 'honox/factory'
 export default createRoute((context, _next) => {
   const writings = import.meta.glob<{ frontmatter: Meta }>(
     ['./experiments/*.md', './experiments/*.mdx'],
-    { eager: true },
+    { eager: true }
   )
   const iterableWritings = Object.entries(writings).filter(
-    ([_, module]) => !module.frontmatter?.hidden,
+    ([_, module]) => !module.frontmatter?.hidden
   )
 
   return context.render(
@@ -22,6 +22,6 @@ export default createRoute((context, _next) => {
           </li>
         ))}
       </ul>
-    </div>,
+    </div>
   )
 })

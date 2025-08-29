@@ -58,5 +58,5 @@ export default jsxRenderer(
         </body>
       </html>
     )
-  },
+  }
 )
