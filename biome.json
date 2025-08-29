@@ -4,9 +4,9 @@
     "ignoreUnknown": false,
     "includes": [
       "**",
-      "!**/dist/**",
+      "!**/dist",
       "!**/*.css",
-      "!**/node_modules/**"
+      "!**/node_modules"
     ]
   },
   "assist": {

@@ -11,7 +11,7 @@ import { useRequestContext } from 'hono/jsx-renderer'
 export default function ContextExample() {
   const context = useRequestContext()
 
-  const start = Number.parseInt(context.req.query('start') ?? '0')
+  const start = Number.parseInt(context.req.query('start') ?? '0', 10)
 
   return <Counter start={start} />
 }
